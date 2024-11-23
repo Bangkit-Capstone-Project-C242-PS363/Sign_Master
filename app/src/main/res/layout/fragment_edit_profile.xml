@@ -1,0 +1,134 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <!-- Header dengan RelativeLayout -->
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEF7FF"
+        android:paddingVertical="16dp"
+        android:elevation="4dp">
+
+        <!-- Back Button -->
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:contentDescription="Back Button"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <!-- Profile Picture -->
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/placeholder_image"
+        android:contentDescription="Profile Picture"
+        android:scaleType="centerCrop"
+        style="@style/CircularImageView"
+        android:background="@drawable/circle_background" />
+
+    <!-- Change Foto -->
+    <TextView
+        android:id="@+id/change_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp"
+        android:text="Change Foto"
+        android:textSize="16sp"
+        android:textColor="#2196F3" />
+
+    <!-- Fullname -->
+    <EditText
+        android:id="@+id/fullname_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp"
+        android:hint="Fullname"
+        android:background="@drawable/bg_edit_text"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="#000000" />
+
+    <!-- Gender Dropdown -->
+    <Spinner
+        android:id="@+id/gender_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_edit_text"
+        android:padding="16dp" />
+
+    <!-- Email -->
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Email"
+        android:background="@drawable/bg_edit_text"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:inputType="textEmailAddress"
+        android:textColor="#000000" />
+
+    <!-- Phone Number -->
+    <EditText
+        android:id="@+id/phone_input"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="16dp"
+        android:hint="Phone Number"
+        android:background="@drawable/bg_edit_text"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:inputType="phone"
+        android:textColor="#000000" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        android:text="Save"
+        android:backgroundTint="#FFC107"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:padding="16dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

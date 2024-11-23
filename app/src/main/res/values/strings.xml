@@ -10,7 +10,12 @@
     <string name="study">Study</string>
     <string name="news">News</string>
     <string name="news_name">News Tittle\n</string>
+<<<<<<< HEAD
     <string name="tagline_study">Learn to Speak with Hands\nConnect with Hearts!</string>
     <string name="learn_material">Learn Material</string>
     <string name="material_title">Material Title</string>
+=======
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+>>>>>>> 90083d3 (profil,edit profil, login, and sign up)
 </resources>
